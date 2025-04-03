@@ -36,6 +36,11 @@ export default function HomePage(): ReactElement {
       esPaginationOptions: {
         size: 6
       },
+      filters: [
+        {
+          term: { 'nfr.owner': '0x5a43ad449987600408f1e3fC90d397EC0266889B' }
+        }
+      ],
       sortOptions: {
         sortBy: SortTermOptions.Orders
       } as SortOptions
@@ -52,7 +57,7 @@ export default function HomePage(): ReactElement {
 
       <SectionQueryResult title="Most Sales" query={queryMostSales} />
       {/* <MostViews /> */}
-      <TopSales title="Publishers With Most Sales" />
+      {/*<TopSales title="Publishers With Most Sales" />*/}
       <TopTags title="Top Tags By Sales" />
 
       <SectionQueryResult
