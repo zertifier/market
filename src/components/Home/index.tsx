@@ -43,7 +43,8 @@ export default function HomePage(): ReactElement {
       },
       filters: [
         {
-          term: { 'nft.owner': '0x5a43ad449987600408f1e3fc90d397ec0266889b' }
+          // term: { 'nft.owner': '0x5a43ad449987600408f1e3fc90d397ec0266889b' }
+          term: { 'metadata.author': 'Zertifier' }
         }
       ],
       sortOptions: {
