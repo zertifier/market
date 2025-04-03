@@ -24,7 +24,12 @@ export default function HomePage(): ReactElement {
       esPaginationOptions: {
         size: 6
       },
-      filters: filterDatasets,
+      // filters: filterDatasets,
+      filters: [
+        {
+          term: { 'nft.owner': '0x5a43ad449987600408f1e3fc90d397ec0266889b' }
+        }
+      ],
       sortOptions: {
         sortBy: SortTermOptions.Created
       } as SortOptions
