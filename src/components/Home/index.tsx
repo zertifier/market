@@ -38,7 +38,7 @@ export default function HomePage(): ReactElement {
       },
       filters: [
         {
-          term: { 'nft.owner': '0x5a43ad449987600408f1e3fC90d397EC0266889B' }
+          term: { 'nft.owner': '0x5a43ad449987600408f1e3fc90d397ec0266889b' }
         }
       ],
       sortOptions: {
@@ -50,15 +50,15 @@ export default function HomePage(): ReactElement {
 
   return (
     <>
-      <section className={styles.section}>
+      {/*<section className={styles.section}>
         <h3>Your Bookmarks</h3>
         <Bookmarks />
-      </section>
+      </section>*/}
 
       <SectionQueryResult title="Most Sales" query={queryMostSales} />
       {/* <MostViews /> */}
       {/*<TopSales title="Publishers With Most Sales" />*/}
-      <TopTags title="Top Tags By Sales" />
+      {/*<TopTags title="Top Tags By Sales" />*/}
 
       <SectionQueryResult
         title="Recently Published"
