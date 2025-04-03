@@ -38,7 +38,7 @@ export default function HomePage(): ReactElement {
       },
       filters: [
         {
-          term: { 'nfr.owner': '0x5a43ad449987600408f1e3fC90d397EC0266889B' }
+          term: { 'nft.owner': '0x5a43ad449987600408f1e3fC90d397EC0266889B' }
         }
       ],
       sortOptions: {
