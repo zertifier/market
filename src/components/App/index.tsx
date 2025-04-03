@@ -22,9 +22,9 @@ export default function App({
 
   return (
     <div className={styles.app}>
-      {siteContent?.announcement !== '' && (
+{/*      {siteContent?.announcement !== '' && (
         <AnnouncementBanner text={siteContent?.announcement} />
-      )}
+      )}*/}
       <Header />
 
       {isInPurgatory && (
